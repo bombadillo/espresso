@@ -1,5 +1,10 @@
 {
     "dependencies": {
-        "coffee-script": "~1.9.0"
+        "coffee-script": "1.9.0"
+    },
+    "scripts": {
+        "postinstall": "node postInstall.js",
+        "hotCoffee": "coffee --watch --compile --output lib/ src/",
+        "prehotCoffee": "echo Coffee Brewing"
     }
 }
