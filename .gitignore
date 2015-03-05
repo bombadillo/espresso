@@ -1,5 +1,6 @@
 node_modules
 npm-debug.log
-lib/*
+lib/*.js
 runScripts/*.js
 test/*.js
+_vendor

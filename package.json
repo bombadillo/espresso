@@ -1,13 +1,16 @@
 {
-    "dependencies": {
-        "coffee-script": "1.9.0"
-    },
-    "scripts": {
-        "preinstall":       "coffee --compile --output runScripts/ runScripts/",
-        "postinstall":      "node runScripts/postInstall.js",
-        "buildCoffee":      "coffee --watch --compile --output runScripts/ runScripts/",
-        "hotCoffee":        "coffee --watch --compile --output lib/ src/",
-        "testCoffee":       "node runScripts/buildTestScripts.js",
-        "test":             "mocha"
-    }
+  "devDependencies": {
+    "coffee-script": "1.9.0",
+    "coffeescript-concat": "*",
+    "gaze": "^0.5.1",
+    "mocha": "*"
+  },
+  "scripts": {
+    "preinstall": "coffee --compile --output runScripts/ runScripts/",
+    "postinstall": "node runScripts/postInstall.js",
+    "buildCoffee": "coffee  --watch --compile --output runScripts/ runScripts/",
+    "hotCoffee": "node runScripts/hotCoffee.js",
+    "testCoffee": "node runScripts/buildTestScripts.js",
+    "test": "mocha"
+  }
 }
