@@ -1,7 +1,11 @@
 {
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/bombadillo/espresso.git"
+  },
   "devDependencies": {
     "coffee-script": "1.9.0",
-    "coffeescript-concat": "*",
+    "browserify": "2.5.1",
     "gaze": "^0.5.1",
     "mocha": "*"
   },
@@ -11,6 +15,7 @@
     "buildCoffee": "coffee  --watch --compile --output runScripts/ runScripts/",
     "hotCoffee": "node runScripts/hotCoffee.js",
     "testCoffee": "node runScripts/buildTestScripts.js",
-    "test": "mocha"
+    "test": "mocha",
+    "browserify": "browserify src/app.js -o lib/bundle.js -d"
   }
 }
