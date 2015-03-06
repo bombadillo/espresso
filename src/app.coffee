@@ -4,6 +4,6 @@ Sales = require "./functions/sales"
 
 console.log Animal
 
-animal = new Animal 
-
+animal = new Animal
+ 
 Sales.performSales(animal)

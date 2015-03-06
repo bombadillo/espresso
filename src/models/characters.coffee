@@ -16,4 +16,4 @@ class Customer
 
 exports = this
 exports.Animal = Animal
-exports.Customer = Customer    
+exports.Customer = Customer
