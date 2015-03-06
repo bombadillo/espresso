@@ -3,5 +3,5 @@ npm-debug.log
 lib/*.js
 runScripts/*.js
 test/*.js
-src/*.js
+src/**/*.js
 _vendor
