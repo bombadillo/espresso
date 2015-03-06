@@ -6,16 +6,15 @@
   "devDependencies": {
     "coffee-script": "1.9.0",
     "browserify": "2.5.1",
-    "gaze": "^0.5.1",
     "mocha": "*"
   },
   "scripts": {
     "preinstall": "coffee --compile --output runScripts/ runScripts/",
     "postinstall": "node runScripts/postInstall.js",
-    "buildCoffee": "coffee  --watch --compile --output runScripts/ runScripts/",
-    "hotCoffee": "node runScripts/hotCoffee.js",
+    "buildCoffee": "coffee --watch --compile --output runScripts/ runScripts/",
     "testCoffee": "node runScripts/buildTestScripts.js",
     "test": "mocha",
-    "browserify": "browserify src/app.js -o lib/bundle.js -d"
+    "hotCoffee": "coffee -cwo src/ src/",
+    "watchify": "watchify src/app.js -o lib/bundle.js"
   }
 }
