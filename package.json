@@ -15,6 +15,7 @@
     "testCoffee": "node runScripts/buildTestScripts.js",
     "test": "mocha",
     "hotCoffee": "coffee -cwo src/ src/",
+    "hotTests": "coffee -cwo spec/ spec/",
     "watchify": "watchify src/app.js -o lib/bundle.js",
     "dev": "coffee -c src/ src/ & watchify src/app.js -o lib/bundle.js"
   }

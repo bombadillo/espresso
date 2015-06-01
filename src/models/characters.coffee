@@ -12,7 +12,7 @@ class Customer
         @wallet = wallet
 
     sayName: ->
-        console.log "my name is " + @name
+        console.log "My name is " + @name
 
 exports = this
 exports.Animal = Animal

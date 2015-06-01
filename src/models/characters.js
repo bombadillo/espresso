@@ -27,7 +27,7 @@
     }
 
     Customer.prototype.sayName = function() {
-      return console.log("my name is " + this.name);
+      return console.log("My name is " + this.name);
     };
 
     return Customer;
