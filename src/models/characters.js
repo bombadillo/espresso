@@ -16,14 +16,15 @@
   })();
 
   Customer = (function() {
-    Customer.prototype.name = "unknown";
-
-    function Customer(name, wallet) {
-      if (wallet == null) {
-        wallet = 0.00;
+    function Customer(options) {
+      var key, val;
+      if (options == null) {
+        options = {};
       }
-      this.name = name;
-      this.wallet = wallet;
+      for (key in options) {
+        val = options[key];
+        this[key] = val;
+      }
     }
 
     Customer.prototype.sayName = function() {

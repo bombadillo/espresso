@@ -4,12 +4,12 @@ class Animal
   sell: (customer) ->
       console.log customer.name
 
-class Customer
-    name: "unknown"
-
-    constructor: (name, wallet = 0.00) ->
-        @name = name
-        @wallet = wallet
+class Customer    
+        
+    constructor: (options={}) ->
+      for key, val of options
+        @[key] = val
+    #@name = options.name ? "Ken"
 
     sayName: ->
         console.log "My name is " + @name
